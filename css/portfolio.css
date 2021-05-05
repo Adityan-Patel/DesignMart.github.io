@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 18px;
+
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+}
+
+h2{
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 120%;
+    margin-bottom: 20px;
+    color:black;
+}
+
+.filter-menu{
+    margin-bottom: 20px;
+}
+
+
+
+
+
+.filter-item li{
+    width: 50%;
+    padding: 2px;
+    float: left;
+}
+
+.filter-item li.active{
+    width: 50%;
+    padding: 2px;
+    transition: all 0.5s ease;
+}
+
+.filter-item li.delete{
+    width: 0%;
+    padding: 0;
+    transition: all 0.5s ease;
+}
+
+.filter-item img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 768px){
+    .filter-item li.active,
+    .filter-item li{
+        width: 33.33%;
+    }
+
+    h2{
+        font-size: 190%;
+    }
+}
+@media screen and (min-width: 1280px){
+    .filter-item li.active,
+    .filter-item li{
+        width: 25%;
+    }
+
+    h2{
+        font-size: 270%;
+    }
+}
+.button{
+    display: inline-block;
+    padding: 10px 20px;
+    color:BLACK;
+    text-transform: uppercase;
+    background: rgba(253, 253, 253, 0.541);
+    box-shadow: inset 0 0 0 0  darkgreen;
+    transition: ease-out 0.5s;
+    text-decoration: none;
+    position: INLINE;
+     line-height: 1;
+     letter-spacing: 2px;
+     font-size: 13px;
+}
+.button:hover 
+{
+    box-shadow: inset 120px 0 0 darkgreen;
+    cursor: pointer;
+    color: BLACK ;
+}
